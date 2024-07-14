@@ -31,7 +31,7 @@ def train_neuron(features: np.ndarray, labels: np.ndarray, initial_weights: np.n
             error = prediction - y
             total_error += error ** 2
 
-            d_prediction = error * prediction * (1 - prediction)  # derivative of sigmoid
+            d_prediction = error * prediction * (1 - prediction) 
             weight_gradients += d_prediction * x
             bias_gradient += d_prediction
 
